@@ -1,8 +1,24 @@
-.jumbotron {
+.position-relative {
   margin-bottom: 0px;
   background-image: url(../images/cover.jpg);
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat;
   color: #000000;
+}
+.container {
+  max-width: 960px;
+}
+.jumbotron {
+  padding: 1rem 1rem;
+}
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
 }
