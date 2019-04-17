@@ -21,10 +21,10 @@
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
             <a class="nav-link" href="options.html">Options</a>
           </li>
           <li class="nav-item">
@@ -33,106 +33,133 @@
         </ul>
       </div>
     </nav>
-    <div class="jumbotron text-center">
-      <h1 class="jumbotron-heading">Greeting cards</h1>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">First Frost</h2>
+    <nav class="nav nav-tabs flex-column flex-sm-row" id="myTab" role="tablist">
+      <a class="flex-sm-fill text-sm-center nav-link active" id="greetings-tab" data-toggle="tab" href="#greetings" role="tab" aria-controls="greetings"
+          aria-selected="true">Greeting Cards</a>
+      <a class="flex-sm-fill text-sm-center nav-link" id="business-tab" data-toggle="tab" href="#business" role="tab" aria-controls="business"
+          aria-selected="false">Business Cards</a>
+      <a class="flex-sm-fill text-sm-center nav-link" id="invitations-tab" data-toggle="tab" href="#invitations" role="tab" aria-controls="invitations"
+          aria-selected="false">Invitation Cards</a>
+    </nav>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="greetings" role="tabpanel" aria-labelledby="greetings-tab">
+        <div class="jumbotron text-center">
+          <h1 class="jumbotron-heading">Greeting cards</h1>
         </div>
-        <img src="images/first-frost.jpg" alt="" class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">First Frost</h2>
+            </div>
+            <img src="images/first-frost.jpg" alt="" class="bg-light shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          </div>
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Warm Tidings</h2>
+            </div>
+            <img src="images/warm-tidings.jpg" alt="" class="bg-light shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          </div>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Glow Up</h2>
+            </div>
+            <img src="images/glow-up.jpg" alt="" class="bg-light shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          </div>
+          <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Handsome Scribbling</h2>
+            </div>
+            <img src="images/handsome-scribbling.jpg" alt="" class="bg-light shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          </div>
+        </div>
       </div>
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Warm Tidings</h2>
+      <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
+        <div class="jumbotron text-center">
+          <h1 class="jumbotron-heading">Business cards</h1>
         </div>
-        <img src="images/warm-tidings.jpg" alt="" class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Original Business Cards</h2>
+              <p class="lead">50 cards from $19.99</p>
+            </div>
+            <img class="bg-light shadow-sm mx-auto" src="images/original-business-card.jpg"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
+          </div>
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Cotton Business Cards</h2>
+              <p class="lead">50 cards from $26.99.</p>
+            </div>
+            <img class="bg-dark shadow-sm mx-auto" src="images/cotton-business-cards.jpg"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
+          </div>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Super Business Cards</h2>
+              <p class="lead">50 cards from $26.99</p>
+            </div>
+            <img src="images/super-business-cards.jpg" class="bg-dark shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
+          </div>
+          <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Luxe Business Cards</h2>
+              <p class="lead">50 cards from $34.99</p>
+            </div>
+            <img src="images/luxe-business-cards.jpg" class="bg-light shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Glow Up</h2>
+      <div class="tab-pane fade" id="invitations" role="tabpanel" aria-labelledby="invitations-tab">
+        <div class="jumbotron text-center">
+          <h1 class="jumbotron-heading">Invitation cards</h1>
         </div>
-        <img src="images/glow-up.jpg" alt="" class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      </div>
-      <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Handsome Scribbling</h2>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Original Invitations</h2>
+              <p class="lead">25 postcards from $21.00</p>
+            </div>
+            <img src="images/original-invitations.jpg" class="bg-light shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
+          </div>
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Cotton Invitations</h2>
+              <p class="lead">25 postcards from $25.00</p>
+            </div>
+            <img src="images/super-invitations.jpg" class="bg-dark shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
+          </div>
         </div>
-        <img src="images/handsome-scribbling.jpg" alt="" class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-      </div>
-    </div>
-
-    <div class="jumbotron text-center">
-      <h1 class="jumbotron-heading">Business cards</h1>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Original Business Cards</h2>
-          <p class="lead">50 cards from $19.99</p>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Super Invitations</h2>
+              <p class="lead">25 postcards from $29.00</p>
+            </div>
+            <img src="images/super-invitations.jpg" class="bg-dark shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img src="images/super-invitations.jpg">
+          </div>
+          <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">Luxe Invitations</h2>
+              <p class="lead">25 postcards from $53.00</p>
+            </div>
+            <img src="images/luxe-invitations.jpg" class="bg-light shadow-sm mx-auto"
+              style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img src="images/luxe-invitations.jpg">
+          </div>
         </div>
-        <img class="bg-light shadow-sm mx-auto" src="images/original-business-card.jpg" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
-      </div>
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Cotton Business Cards</h2>
-          <p class="lead">50 cards from $26.99.</p>
-        </div>
-        <img class="bg-dark shadow-sm mx-auto" src="images/cotton-business-cards.jpg" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
-      </div>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Super Business Cards</h2>
-          <p class="lead">50 cards from $26.99</p>
-        </div>
-        <img src="images/super-business-cards.jpg" class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
-      </div>
-      <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Luxe Business Cards</h2>
-          <p class="lead">50 cards from $34.99</p>
-        </div>
-        <img src="images/luxe-business-cards.jpg" class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
-      </div>
-    </div>
-    <div class="jumbotron text-center">
-      <h1 class="jumbotron-heading">Invitation cards</h1>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Original Invitations</h2>
-          <p class="lead">25 postcards from $21.00</p>
-        </div>
-        <img src="images/original-invitations.jpg" class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
-      </div>
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Cotton Invitations</h2>
-          <p class="lead">25 postcards from $25.00</p>
-        </div>
-        <img src="images/super-invitations.jpg" class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img>
-      </div>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Super Invitations</h2>
-          <p class="lead">25 postcards from $29.00</p>
-        </div>
-        <img src="images/super-invitations.jpg" class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img src="images/super-invitations.jpg">
-      </div>
-      <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">Luxe Invitations</h2>
-          <p class="lead">25 postcards from $53.00</p>
-        </div>
-        <img src="images/luxe-invitations.jpg" class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></img src="images/luxe-invitations.jpg">
       </div>
     </div>
     <footer class="text-muted">
@@ -143,5 +170,7 @@
         <p>Designed by Serene Mitri</p>
       </div>
     </footer>
+    <script src="js/jquery-3.4.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
   </body>
 </html>
